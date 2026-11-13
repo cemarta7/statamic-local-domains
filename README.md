@@ -7,7 +7,7 @@ changes are needed.
 ## Requirements
 
 - PHP 8.2 or later
-- Laravel 11–13 and Statamic 5–6
+- Laravel 12.40+ or 13, and Statamic 5–6
 - An application already running with `APP_ENV=local`
 - DNS, web server aliases, and HTTPS certificates configured for each hostname
 

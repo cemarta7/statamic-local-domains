@@ -8,10 +8,11 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include:
           - php: '8.2'
-            laravel: '^11.0'
+            laravel: '^12.40'
             statamic: '^5.0'
           - php: '8.3'
             laravel: '^12.0'
@@ -20,7 +21,7 @@ jobs:
             laravel: '^13.0'
             statamic: '^6.0'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
